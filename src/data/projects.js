@@ -1,3 +1,4 @@
+
 import ninaImage from '../assets/projects/nina-carducci.webp'
 import kasaImage from '../assets/projects/kasa.webp'
 import grimoireImage from '../assets/projects/mon-vieux-grimoire.webp'
@@ -7,6 +8,7 @@ const projects = [
     title: 'Nina Carducci',
     category: 'Qualité web',
     image: ninaImage,
+    github: 'https://github.com/anthony-lefloch/Projet-4-Nina-Carducci',
     technologies: ['HTML', 'CSS', 'SEO', 'Accessibilité', 'Lighthouse', 'WAVE'],
 
     description:
@@ -38,6 +40,7 @@ const projects = [
     title: 'Kasa',
     category: 'Front-end',
     image: kasaImage,
+    github: 'https://github.com/anthony-lefloch/kasa',
     technologies: ['React', 'React Router', 'Sass'],
 
     description:
@@ -69,6 +72,7 @@ const projects = [
     title: 'Mon Vieux Grimoire',
     category: 'Back-end',
     image: grimoireImage,
+    github: 'https://github.com/anthony-lefloch/projet-6-mon-vieux-grimoire',
     technologies: ['Node.js', 'Express', 'MongoDB', 'API REST'],
 
     description:

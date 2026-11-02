@@ -792,3 +792,182 @@ main {
   background-color: currentColor;
   border-radius: 2px;
 }
+
+
+/* ========================================
+   AMÉLIORATION VISUELLE DES FICHES PROJETS
+======================================== */
+
+.project-dialog {
+  width: min(760px, calc(100% - 32px));
+  border: 1px solid $color-sage;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(15, 35, 25, 0.25);
+
+  &__content {
+    padding: 44px;
+  }
+
+  &__category {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background-color: $color-background-alt;
+    color: $color-primary;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid $color-sage;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: $color-primary;
+  }
+
+  h3 {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    color: $color-primary;
+    font-size: 1.15rem;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  ul {
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+
+    &::marker {
+      color: $color-primary;
+    }
+  }
+
+  &__close {
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+}
+
+/* Adaptation mobile */
+
+@media (max-width: 600px) {
+  .project-dialog {
+    &__content {
+      padding: 28px 20px;
+    }
+
+    h2 {
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      margin-top: 26px;
+    }
+  }
+}
+
+/* ========================================
+   IMAGE ET TECHNOLOGIES DES FICHES PROJETS
+======================================== */
+
+.project-dialog {
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    margin: 0 0 32px;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 16px 0 24px;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background-color: $color-background-alt;
+      color: $color-primary;
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  }
+}
+
+/* Adaptation mobile */
+
+@media (max-width: 600px) {
+  .project-dialog {
+
+    &__image {
+      max-height: 220px;
+      margin-bottom: 24px;
+    }
+
+    &__technologies {
+      gap: 8px;
+
+      li {
+        padding: 7px 12px;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+
+/* ========================================
+   BOUTON GITHUB DES FICHES PROJETS
+======================================== */
+
+.project-dialog {
+  &__github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin-top: 28px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      background-color: #284938;
+      transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 4px;
+    }
+  }
+}

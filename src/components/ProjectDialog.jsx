@@ -1,3 +1,4 @@
+
 function ProjectDialog({ project, dialogRef }) {
   if (!project) {
     return null
@@ -14,6 +15,7 @@ function ProjectDialog({ project, dialogRef }) {
       aria-labelledby="project-dialog-title"
     >
       <div className="project-dialog__content">
+
         <button
           className="project-dialog__close"
           type="button"
@@ -31,6 +33,15 @@ function ProjectDialog({ project, dialogRef }) {
           {project.title}
         </h2>
 
+        {project.image && (
+          <img
+            className="project-dialog__image"
+            src={project.image}
+            alt={`Aperçu du projet ${project.title}`}
+            decoding="async"
+          />
+        )}
+
         <h3>Contexte</h3>
         <p>{project.context}</p>
 
@@ -42,9 +53,11 @@ function ProjectDialog({ project, dialogRef }) {
         </ul>
 
         <h3>Technologies</h3>
-        <ul>
+        <ul className="project-dialog__technologies">
           {project.technologies.map((technology) => (
-            <li key={technology}>{technology}</li>
+            <li key={technology}>
+              {technology}
+            </li>
           ))}
         </ul>
 
@@ -57,6 +70,18 @@ function ProjectDialog({ project, dialogRef }) {
 
         <h3>Améliorations possibles</h3>
         <p>{project.improvements}</p>
+
+        {project.github && (
+          <a
+            className="project-dialog__github"
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Voir le code sur GitHub ↗
+          </a>
+        )}
+
       </div>
     </dialog>
   )

@@ -1,7 +1,11 @@
 function Footer() {
   return (
     <footer className="footer">
-      <p>Portfolio professionnel — Anthony Le Floch</p>
+      <p>
+        © 2026 Anthony Le Floch — Tous droits réservés
+        <br />
+        Développeur web
+      </p>
     </footer>
   )
 }

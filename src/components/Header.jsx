@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 const links = [
@@ -14,6 +15,10 @@ function Header() {
 
   return (
     <header>
+      <a href="#contenu-principal" className="skip-link">
+        Aller au contenu principal
+      </a>
+
       <div className="header__inner">
         <button
           className="menu-toggle"

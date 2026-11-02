@@ -1,15 +1,15 @@
 const skills = [
   {
     title: 'Front-end',
-    items: ['HTML', 'CSS', 'JavaScript', 'React', 'Sass', 'Responsive'],
+    items: ['HTML', 'CSS', 'JavaScript', 'React', 'Sass', 'Responsive design'],
   },
   {
     title: 'Back-end',
-    items: ['Node.js', 'Express', 'MongoDB', 'API', 'Authentification', 'CRUD'],
+    items: ['Node.js', 'Express', 'MongoDB', 'API REST', 'Authentification', 'CRUD'],
   },
   {
     title: 'Qualité web',
-    items: ['Accessibilité', 'SEO', 'Lighthouse', 'WAVE', 'DevTools', 'Tests'],
+    items: ['Accessibilité', 'SEO', 'Lighthouse', 'WAVE', 'DevTools', 'Tests et audits web'],
   },
   {
     title: 'Gestion de projet',
@@ -22,7 +22,10 @@ function Skills() {
     <section id="competences" className="section section--alt">
       <div className="section__content">
         <p className="section__eyebrow">Compétences</p>
-        <h2>Les technologies et méthodes que j’utilise</h2>
+
+        <h2>
+          Mes compétences en développement web front-end et back-end
+        </h2>
 
         <div className="skills-grid">
           {skills.map((skillGroup) => (

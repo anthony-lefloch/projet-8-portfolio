@@ -19,7 +19,9 @@ function Projects() {
       <div className="section__content">
         <p className="section__eyebrow">Projets</p>
 
-        <h2>Quelques projets réalisés pendant ma formation</h2>
+        <h2>
+          Mes projets de développement web front-end, back-end et qualité web
+        </h2>
 
         <div className="projects-grid">
           {projects.map((project) => (
@@ -28,9 +30,13 @@ function Projects() {
                 className="project-card__image"
                 src={project.image}
                 alt={`Aperçu du projet ${project.title}`}
+                loading="lazy"
+                decoding="async"
               />
 
-              <p className="project-card__category">{project.category}</p>
+              <p className="project-card__category">
+                {project.category}
+              </p>
 
               <h3>{project.title}</h3>
 
@@ -45,6 +51,7 @@ function Projects() {
               <button
                 type="button"
                 onClick={() => openProject(project)}
+                aria-label={`Découvrir le projet ${project.title}`}
               >
                 Découvrir le projet
               </button>

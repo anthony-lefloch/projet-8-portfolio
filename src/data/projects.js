@@ -8,16 +8,20 @@ const projects = [
     category: 'Qualité web',
     image: ninaImage,
     technologies: ['HTML', 'CSS', 'SEO', 'Accessibilité', 'Lighthouse', 'WAVE'],
+
     description:
-      'Optimisation des performances, du référencement et de l’accessibilité du site d’une photographe.',
+      'Optimisation d’un site web de photographe : performances, référencement naturel (SEO) et accessibilité numérique.',
+
     context:
-      'Le projet consistait à analyser puis améliorer un site existant afin d’optimiser ses performances, son référencement naturel et son accessibilité.',
+      'Le projet consistait à analyser et améliorer le site web existant d’une photographe afin d’optimiser ses performances, son référencement naturel et son accessibilité.',
+
     objectives: [
       'Améliorer les performances du site',
-      'Optimiser le SEO',
+      'Optimiser le référencement naturel (SEO)',
       'Corriger les problèmes d’accessibilité',
       'Vérifier les résultats avec des outils d’audit',
     ],
+
     skills: [
       'Analyse avec Chrome DevTools',
       'Optimisation des images et du chargement',
@@ -25,58 +29,71 @@ const projects = [
       'Accessibilité numérique',
       'Audits Lighthouse et WAVE',
     ],
+
     improvements:
       'Continuer à surveiller les performances et l’accessibilité après les évolutions futures du site.',
   },
+
   {
     title: 'Kasa',
     category: 'Front-end',
     image: kasaImage,
     technologies: ['React', 'React Router', 'Sass'],
+
     description:
-      'Développement d’une application immobilière avec React, composants réutilisables et navigation dynamique.',
+      'Développement d’une application web de location immobilière avec React, React Router, composants réutilisables et interface responsive.',
+
     context:
-      'Le projet consistait à développer l’interface d’une plateforme de location immobilière à partir d’une maquette.',
+      'Le projet consistait à développer l’interface d’une application web de location immobilière à partir d’une maquette, en utilisant React pour organiser les composants et React Router pour gérer la navigation.',
+
     objectives: [
-      'Créer l’application avec React',
-      'Mettre en place une navigation entre les pages',
+      'Développer l’application avec React',
+      'Mettre en place une navigation avec React Router',
       'Créer des composants réutilisables',
       'Adapter l’interface aux différentes tailles d’écran',
     ],
+
     skills: [
-      'React',
+      'Développement front-end avec React',
       'Composants et props',
-      'React Router',
-      'Sass',
+      'Navigation avec React Router',
+      'Styles avec Sass',
       'Responsive design',
     ],
+
     improvements:
       'Améliorer encore la gestion des états et prévoir des tests automatisés sur les composants principaux.',
   },
+
   {
     title: 'Mon Vieux Grimoire',
     category: 'Back-end',
     image: grimoireImage,
-    technologies: ['Node.js', 'Express', 'MongoDB', 'API'],
+    technologies: ['Node.js', 'Express', 'MongoDB', 'API REST'],
+
     description:
-      'Création du back-end d’un site de notation de livres avec authentification et opérations CRUD sécurisées.',
+      'Développement d’une API REST avec Node.js, Express et MongoDB pour un site de notation de livres, avec authentification et opérations CRUD sécurisées.',
+
     context:
-      'Le projet consistait à développer l’API et la logique serveur d’un site permettant aux utilisateurs de gérer et noter des livres.',
+      'Le projet consistait à développer le back-end d’un site de notation de livres, en créant une API REST permettant aux utilisateurs de gérer et noter des livres, avec une authentification et un stockage des données dans MongoDB.',
+
     objectives: [
-      'Créer une API REST',
-      'Mettre en place l’authentification',
+      'Créer une API REST avec Node.js et Express',
+      'Mettre en place l’authentification des utilisateurs',
       'Gérer les opérations CRUD',
-      'Sécuriser les routes',
+      'Sécuriser les routes de l’API',
       'Stocker les données dans MongoDB',
     ],
+
     skills: [
-      'Node.js',
-      'Express',
-      'MongoDB',
-      'Authentification',
-      'CRUD sécurisé',
+      'Développement back-end avec Node.js',
+      'Création d’API REST avec Express',
+      'Gestion des données avec MongoDB',
+      'Authentification des utilisateurs',
+      'Opérations CRUD sécurisées',
       'Gestion des images',
     ],
+
     improvements:
       'Ajouter davantage de tests automatisés et renforcer encore la gestion des erreurs côté serveur.',
   },

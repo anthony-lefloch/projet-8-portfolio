@@ -1,4 +1,3 @@
-
 import aboutImage from '../assets/about/illustration-a-propos-version-1.webp'
 
 function About() {
@@ -9,20 +8,24 @@ function About() {
           <p className="section__eyebrow">À propos</p>
 
           <h2>
-            Un parcours en reconversion, orienté développement web
+            Développeur web full-stack junior en reconversion professionnelle
           </h2>
 
           <p>
-            Je me forme au développement web avec OpenClassrooms afin
-            de construire des applications modernes, accessibles
+            En reconversion professionnelle, je me forme au développement
+            web avec OpenClassrooms. Mon objectif est de concevoir
+            des applications web modernes, responsive, accessibles
             et maintenables.
           </p>
 
           <p>
-            J’ai travaillé sur des projets front-end et back-end qui
-            m’ont permis de progresser en React, JavaScript, Node.js,
-            Express, MongoDB, accessibilité, SEO et optimisation
-            des performances.
+            À travers mes projets de formation, j'ai développé
+            des compétences en développement front-end avec HTML,
+            CSS, JavaScript et React, ainsi qu'en développement
+            back-end avec Node.js, Express et MongoDB.
+            J'accorde également une attention particulière
+            à l'accessibilité, au référencement naturel (SEO)
+            et à l'optimisation des performances.
           </p>
         </div>
 

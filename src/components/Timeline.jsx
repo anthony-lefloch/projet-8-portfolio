@@ -1,4 +1,3 @@
-
 const timeline = [
   {
     title: 'Mon parcours professionnel',
@@ -13,7 +12,7 @@ const timeline = [
   {
     title: 'Mon objectif professionnel',
     description:
-      "Aujourd'hui, je souhaite intégrer une équipe en tant que développeur web junior afin de mettre en pratique mes compétences, continuer à progresser et contribuer à la réalisation de projets web utiles et de qualité.",
+      "Aujourd'hui, je souhaite intégrer une équipe en tant que développeur web full-stack junior afin de mettre en pratique mes compétences, continuer à progresser et contribuer à la réalisation de projets web utiles et de qualité.",
   },
 ]
 

@@ -12,7 +12,7 @@ function Contact() {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:ton-email@example.com">
+          <a href="mailto:breizhcoder@hotmail.com">
             E-mail
           </a>
 
@@ -25,7 +25,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://x.com/"
+            href="https://x.com/breizhcoder/"
             target="_blank"
             rel="noreferrer"
           >
@@ -33,7 +33,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/breizhcoder/"
             target="_blank"
             rel="noreferrer"
           >

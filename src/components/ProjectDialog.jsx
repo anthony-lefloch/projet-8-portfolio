@@ -8,7 +8,11 @@ function ProjectDialog({ project, dialogRef }) {
   }
 
   return (
-    <dialog className="project-dialog" ref={dialogRef}>
+    <dialog
+      className="project-dialog"
+      ref={dialogRef}
+      aria-labelledby="project-dialog-title"
+    >
       <div className="project-dialog__content">
         <button
           className="project-dialog__close"
@@ -19,9 +23,13 @@ function ProjectDialog({ project, dialogRef }) {
           ×
         </button>
 
-        <p className="project-dialog__category">{project.category}</p>
+        <p className="project-dialog__category">
+          {project.category}
+        </p>
 
-        <h2>{project.title}</h2>
+        <h2 id="project-dialog-title">
+          {project.title}
+        </h2>
 
         <h3>Contexte</h3>
         <p>{project.context}</p>

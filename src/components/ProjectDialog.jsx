@@ -1,4 +1,3 @@
-
 function ProjectDialog({ project, dialogRef }) {
   if (!project) {
     return null
@@ -15,7 +14,6 @@ function ProjectDialog({ project, dialogRef }) {
       aria-labelledby="project-dialog-title"
     >
       <div className="project-dialog__content">
-
         <button
           className="project-dialog__close"
           type="button"
@@ -68,6 +66,9 @@ function ProjectDialog({ project, dialogRef }) {
           ))}
         </ul>
 
+        <h3>Résultats</h3>
+        <p>{project.results}</p>
+
         <h3>Améliorations possibles</h3>
         <p>{project.improvements}</p>
 
@@ -81,7 +82,6 @@ function ProjectDialog({ project, dialogRef }) {
             Voir le code sur GitHub ↗
           </a>
         )}
-
       </div>
     </dialog>
   )

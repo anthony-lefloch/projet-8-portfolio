@@ -1,3 +1,4 @@
+
 function Contact() {
   return (
     <section id="contact" className="section">
@@ -17,7 +18,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/anthony-lefloch"
             target="_blank"
             rel="noreferrer"
           >
